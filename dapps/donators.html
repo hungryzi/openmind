@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OpenMind</title>
+
+    <link rel="stylesheet" type="text/css" href="donators.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+<body>
+
+        <!-- <h1>Coursetro Instructor</h1>
+
+        <h2 id="instructor"></h2>
+        <label for="name" class="col-lg-2 control-label">Sponsors Name:</label>
+        <input id="name" type="text">
+        <label for="name" class="col-lg-2 control-label">Donations:</label>
+        <input id="age" type="text"> -->
+
+        <div class="container-fluid text-center"  id="div1">
+            <h1 class="text-uppercase mb-0">OpenMind Donation</h1>
+            <div>
+
+            <label for="name" class="col-lg-2 control-label">Sponsors Name:</label>
+            <input id="name" type="text">
+          </div>
+            <div>
+            <label for="name" class="col-lg-2 control-label">Donations:</label>
+            <input id="donation" type="text">
+          </div>
+          <div>
+            <button type="button" id="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    if (typeof web3 !== 'undefined') {
+        web3 = new Web3(web3.currentProvider);
+    } else {
+        // set the provider you want from Web3.providers
+        web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+    }
+    web3.eth.defaultAccount = web3.eth.accounts[0];
+    var CoursetroContract = web3.eth.contract([
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_fName",
+				"type": "string"
+			},
+			{
+				"name": "_donation",
+				"type": "uint256"
+			}
+		],
+		"name": "setInstructor",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getInstructor",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]);
+    var Coursetro = CoursetroContract.at('0x364ad08f25f03c2e1db2b3a084851e211f4af95f');
+    console.log(Coursetro);
+
+    Coursetro.getInstructor(function(error, result){
+      if(!error)
+          {
+              /* $("#instructor").html(result[0]+' ('+result[1]+' years old)'); */
+
+              console.log(result);
+          }
+      else
+          console.error(error);
+    });
+
+    $("#button").click(function() {
+      Coursetro.setInstructor($("#name").val(), $("#donation").val());
+      var nameOfDonator = $("#name").val();
+      var para = document.createElement("div");
+      var node = document.createTextNode("Thank for your donation, " + nameOfDonator);
+      para.appendChild(node);
+      var element = document.getElementById("div1");
+      div1.appendChild(node);
+    });
+
+</script>
+
+</body>
+</html>

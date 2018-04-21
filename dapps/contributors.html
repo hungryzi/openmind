@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="contributors.css">
+
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+<body>
+    <div class="container text-center">
+
+        <h1>Openmind Contributor</h1>
+
+        <h2 for="balance" class="control-label">Balance</h2>
+
+
+            <h3 id="balance"></h3>
+            <button class = "btn btn-primary" id="button">Claim Balance</button>
+
+
+
+    </div>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script>
+     if (typeof web3 !== 'undefined') {
+       web3 = new Web3(web3.currentProvider);
+     } else {
+       // set the provider you want from Web3.providers
+       web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+     }
+
+     web3.eth.defaultAccount = web3.eth.accounts[0];
+     var OpenStreetMapPayments = web3.eth.contract([
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "fund",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_contributor",
+                "type": "address"
+            },
+            {
+                "name": "_wei",
+                "type": "uint256"
+            }
+        ],
+        "name": "reportContributions",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "withdrawPayments",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_contributor",
+                "type": "address"
+            }
+        ],
+        "name": "getPayment",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "payments",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "totalPayments",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+]);
+
+var contract= OpenStreetMapPayments.at('0x6cfa090ffc6ebc0d7f6d744f991944fd344f8aed');
+        console.log(contract);
+    </script>
+</body>
+</html>
