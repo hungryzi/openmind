@@ -107,10 +107,15 @@ $("#button").click(function() {
         value: web3.toWei(parseFloat($("#donation").val()), "ether"),
         data: getData
       },
-    function() {
+    function(error, result) {
       var nameOfDonator = $("#name").val();
       var value = $("#donation").val();
-      alert("Thank you for donation, " + nameOfDonator);
+      if(result == null) {
+        alert("Please donate pleaseee");
+      }
+      else {
+        alrt("Thank you for donation, " + nameOfDonator);
+      }
     }
   );
   });
