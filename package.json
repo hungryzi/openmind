@@ -7,11 +7,18 @@
     "truffle": "^4.1.7"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "node-fetch": "^2.1.2",
+    "npm-watch": "^0.3.0",
     "web3": "github:ethereum/web3.js"
   },
+  "watch": {
+    "server": "app/*.js"
+  },
   "scripts": {
-    "build": "rimraf dist/ && babel ./scraper --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "scrape": "npm run build && node dist/app.js"
+    "build": "rimraf dist/ && babel ./app --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "scrape": "npm run build && node dist/app.js",
+    "server": "npm run build && node dist/server.js",
+    "watch": "npm-watch"
   }
 }
