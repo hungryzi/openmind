@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "ethjs-query": "^0.3.6",
-    "express": "^4.16.3",
     "node-fetch": "^2.1.2",
     "npm-watch": "^0.3.0",
     "web3": "github:ethereum/web3.js"
