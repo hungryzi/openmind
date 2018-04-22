@@ -1,3 +1,8 @@
+window.WEI_PER_CONTRIBUTION = 2000000000;
+window.getRandomInt = function(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+};
+
 window.prepareTestData = function() {
   var contributors = [
     {
@@ -31,7 +36,7 @@ window.renderContributorsTable = function() {
   var contributorsCount = localStorage.length;
   for (var i = 0; i < contributorsCount; i++) {
     var user = localStorage.key(i);
-    var contributor = JSON.parse(localStorage.getItem(user));
+    var contributor = JSON.parse(localStorage.getItem(user) || "null");
 
     var $row = $("<tr/>");
     $row.append($("<td/>").text(contributor.user));
@@ -42,28 +47,194 @@ window.renderContributorsTable = function() {
   }
 };
 
-window.updateContributions = function() {
-  var response = [
-    { user: "hungryzi", contributionsCount: getRandomInt(2) },
-    { user: "cuminh", contributionsCount: getRandomInt(4) },
-    { user: "tien", contributionsCount: getRandomInt(3) },
-    { user: "franscis", contributionsCount: getRandomInt(5) },
-    { user: "jishnu", contributionsCount: getRandomInt(7) },
-    { user: "cat", contributionsCount: getRandomInt(8) }
+window.addEventListener("load", function() {
+  if (typeof web3 !== "undefined") {
+    // You have a web3 browser! Continue below!
+    web3 = new Web3(web3.currentProvider);
+  } else {
+    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+  }
+
+  var abi = [
+    {
+      constant: true,
+      inputs: [],
+      name: "totalPayments",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: true,
+      inputs: [],
+      name: "getBalance",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: false,
+      inputs: [
+        {
+          name: "_contributor",
+          type: "address"
+        },
+        {
+          name: "_wei",
+          type: "uint256"
+        }
+      ],
+      name: "reportContributions",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "nonpayable",
+      type: "function"
+    },
+    {
+      constant: false,
+      inputs: [],
+      name: "withdrawBalance",
+      outputs: [],
+      payable: false,
+      stateMutability: "nonpayable",
+      type: "function"
+    },
+    {
+      constant: true,
+      inputs: [],
+      name: "owner",
+      outputs: [
+        {
+          name: "",
+          type: "address"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: false,
+      inputs: [],
+      name: "fund",
+      outputs: [],
+      payable: true,
+      stateMutability: "payable",
+      type: "function"
+    },
+    {
+      constant: true,
+      inputs: [
+        {
+          name: "",
+          type: "address"
+        }
+      ],
+      name: "payments",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      inputs: [],
+      payable: false,
+      stateMutability: "nonpayable",
+      type: "constructor"
+    },
+    {
+      anonymous: false,
+      inputs: [
+        {
+          indexed: true,
+          name: "_contributor",
+          type: "address"
+        },
+        {
+          indexed: false,
+          name: "_balance",
+          type: "uint256"
+        }
+      ],
+      name: "NewPayment",
+      type: "event"
+    }
   ];
 
-  parseResponse(response);
-};
+  var contractAddress = "0x0B7A6B985AaC5aec45EcBBb19B458b287456244c";
+  web3.eth.defaultAccount = web3.eth.accounts[0];
 
-window.parseResponse = function(contributors) {
-  contributors.forEach(function(contributor) {
-    var user = contributor.user;
-    var contributor = JSON.parse(localStorage.getItem(user) || "{}");
+  var OpenStreetMapPayments = web3.eth.contract(abi);
+  var contract = OpenStreetMapPayments.at(contractAddress);
 
-    if
-  });
-};
+  window.updateContributions = function() {
+    var response = [
+      { user: "hungryzi", contributionsCount: getRandomInt(2) },
+      { user: "cuminh", contributionsCount: getRandomInt(4) },
+      { user: "tien", contributionsCount: getRandomInt(3) },
+      { user: "francis", contributionsCount: getRandomInt(5) },
+      { user: "jishnu", contributionsCount: getRandomInt(7) },
+      { user: "cat", contributionsCount: getRandomInt(8) }
+    ];
 
-window.addEventListener("load", function() {
+    parseResponse(response);
+  };
+
+  window.reportContributions = function(address, amount) {
+    contract.reportContributions(address, amount, function(error, result) {
+      console.log("done reportContributions", error, result);
+    });
+  };
+
+  window.parseResponse = function(contributors) {
+    contributors.forEach(function(contributor) {
+      var user = contributor.user;
+      var existing = JSON.parse(localStorage.getItem(user) || "{}");
+      existing.pendingContributions =
+        (existing.pendingContributions || 0) + contributor.contributionsCount;
+
+      if (existing.address) {
+        if (existing.pendingContributions > 0) {
+          reportContributions(
+            existing.address,
+            existing.pendingContributions * WEI_PER_CONTRIBUTION
+          );
+          existing.pendingContributions = 0;
+        }
+      } else {
+        existing.user = user;
+      }
+
+      localStorage.setItem(user, JSON.stringify(existing));
+      renderContributorsTable();
+    });
+  };
+
   renderContributorsTable();
+
+  $("#updateContributionsButton").on("click", function() {
+    updateContributions();
+  });
 });

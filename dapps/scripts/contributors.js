@@ -153,16 +153,6 @@ window.addEventListener("load", function() {
     });
   };
 
-  window.reportContributions = function() {
-    contract.reportContributions(
-      web3.eth.defaultAccount,
-      web3.toWei(0.03, "ether"),
-      function(error, result) {
-        console.log("done reportContributions", error, result);
-      }
-    );
-  };
-
   var event = contract.NewPayment();
   event.watch(function(error, result) {
     if (!error) {
@@ -179,9 +169,5 @@ window.addEventListener("load", function() {
 
   $("#claimButton").on("click", function() {
     withdrawBalance();
-  });
-
-  $("#reportContributionsButton").on("click", function() {
-    reportContributions();
   });
 });
