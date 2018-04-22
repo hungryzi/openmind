@@ -110,12 +110,7 @@ $("#button").click(function() {
     function() {
       var nameOfDonator = $("#name").val();
       var value = $("#donation").val();
-      console.log(value)
-      var para = document.createElement("div");
-      var node = document.createTextNode("Thank for your donation, " + nameOfDonator);
-      para.appendChild(node);
-      var element = document.getElementById("div1");
-      div1.appendChild(node);
+      alert("Thank you for donation, " + nameOfDonator);
     }
   );
   });
