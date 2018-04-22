@@ -2,7 +2,6 @@ window.addEventListener("load", function() {
   if (typeof web3 !== "undefined") {
     web3 = new Web3(web3.currentProvider);
   } else {
-    // set the provider you want from Web3.providers
     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
   }
 
@@ -46,12 +45,7 @@ window.addEventListener("load", function() {
     },
     {
       constant: true,
-      inputs: [
-        {
-          name: "_contributor",
-          type: "address"
-        }
-      ],
+      inputs: [],
       name: "getPayment",
       outputs: [
         {
@@ -96,20 +90,43 @@ window.addEventListener("load", function() {
       stateMutability: "view",
       type: "function"
     }
-  ]
+  ];
   var contractAddress = "0x247c313128543052215d2e06172A4A2ef83a07c8";
   var OpenStreetMapPayments = web3.eth.contract(abi);
   var contract = OpenStreetMapPayments.at(contractAddress);
-  var getData = contract.fund.getData();
-  web3.eth.sendTransaction(
-    {
-      to: contractAddress,
-      from: web3.eth.defaultAccount,
-      value: web3.toWei(0.3, "ether"),
-      data: getData
-    },
-    function() {
-      alert("success!");
-    }
-  );
+
+  window.getBalance = function() {
+    contract.getPayment(function(error, result) {
+      if (!error) {
+        $("#balance").text(JSON.stringify(result));
+      } else {
+        alert(error);
+      }
+    });
+  };
+
+  window.withdrawPayments = function() {
+    contract.withdrawPayments(function(error, result) {
+      console.log("done withdraw", error, result);
+    });
+  };
+
+  window.reportContributions = function() {
+    contract.reportContributions(web3.eth.defaultAccount, 2000, function(
+      error,
+      result
+    ) {
+      console.log("done reportContributions", error, result);
+    });
+  };
+
+  getBalance();
+
+  $("#claimButton").on("click", function() {
+    withdrawPayments();
+  });
+
+  $("#reportContributionsButton").on("click", function() {
+    reportContributions();
+  });
 });
