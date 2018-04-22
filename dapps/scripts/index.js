@@ -7,6 +7,14 @@ function addUser(user, add) {
     localStorage.setItem(user, JSON.stringify(temp));
 }
 
+function saveAddress(user)
+{
+  var add= $("#"+user).val();
+  addUser(user,add);
+  renderContributorsTable();
+
+}
+
 function removeUser(user) {
     localStorage.removeItem(user);
 }
@@ -49,6 +57,7 @@ window.prepareTestData = function() {
     contributors.forEach(function(contributor) {
         localStorage.setItem(contributor.user, JSON.stringify(contributor));
     });
+    renderContributorsTable();
 };
 
 window.renderContributorsTable = function() {
@@ -61,12 +70,18 @@ window.renderContributorsTable = function() {
 
         var $row = $("<tr/>");
         $row.append($("<td/>").text(contributor.user));
-        $row.append($("<td/>").text(contributor.address));
+        if (contributor.address) {
+          $row.append($("<td/>").text(contributor.address));
+        } else {
+          $row.append($("<td/>").html('<input id="'+ contributor.user + '" type="text"><button type="button" class="btn btn-primary" onclick="saveAddress(\''+ contributor.user +'\')">Save</button>'));
+        }
+
         $row.append($("<td/>").text(contributor.pendingContributions));
 
         $("#contributorsTable tbody").append($row);
     }
 };
+
 
 window.addEventListener("load", function() {
   if (typeof web3 !== "undefined") {
