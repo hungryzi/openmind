@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OpenMind</title>
+    <title>OpenMind Admin</title>
     <link rel="stylesheet" type="text/css" href="donators.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="./scripts/index.js"></script>
@@ -12,42 +12,46 @@
   <body>
     <ul class="nav justify-content-center" id="menubar">
       <li class="nav-item active">
-        <a class="nav-link">Contributions</a>
+        <a class="nav-link">Admin</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/donators.html">Donate</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contributors.html">Claim Rewards</a>
+        <a class="nav-link" href="/contributors.html">Claim Reward</a>
       </li>
     </ul>
-    <div class="container-fluid text-center">
-    <a href="/">
-      <h1>OpenMind</h1>
-    </a>
-    <h5>
-      We reward OpenStreetMap contributors for their contributions during disaster relief effort.
-    </h5>
-    <h5>
-      Our reward fund can be funded by anyone! Be the change you want to see in the world!
-    </h5>
     <div class="container-fluid">
-    <h4 class="text-center">List of OpenStreetMap contributions</h4>
-    <br/>
-    <table class="table" id="contributorsTable">
-      <thead>
-        <th>user</th>
-        <th>address</th>
-        <th>pending contributions</th>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
+      <div class="text-center">
+        <a href="/">
+          <h1>OpenMind</h1>
+        </a>
+        <h5>
+          We reward OpenStreetMap contributors for their contributions during disaster relief effort.
+        </h5>
+        <h5>
+          Our reward fund can be funded by anyone! Be the change you want to see in the world!
+        </h5>
+      </div>
+      <br/>
+      <h5 class="text-center">List of OpenStreetMap contributions</h5>
+      <br/>
+      <table class="table" id="contributorsTable">
+        <thead>
+          <th>user</th>
+          <th>address</th>
+          <th>pending contributions</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
 
-    <div>
-      <button class = "btn btn-primary" id="updateContributionsButton">Update Contributions</button>
-    </div>
-  </div>
+      <br/>
+      <br/>
+
+      <div>
+        <button class = "btn btn-primary" id="updateContributionsButton">Update Contributions</button>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

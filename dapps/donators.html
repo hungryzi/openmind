@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OpenMind</title>
+    <title>OpenMind Donator App</title>
     <link rel="stylesheet" type="text/css" href="donators.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="../node_modules/web3/dist/web3.min.js"></script>
@@ -14,13 +14,13 @@
 
   <ul class="nav justify-content-center" id="menubar">
     <li class="nav-item">
-      <a class="nav-link" href="/index.html">Contributions</a>
+      <a class="nav-link" href="/index.html">Admin</a>
     </li>
     <li class="nav-item active">
       <a class="nav-link">Donate</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/contributors.html">Claim Rewards</a>
+      <a class="nav-link" href="/contributors.html">Claim Reward</a>
     </li>
   </ul>
   <div class="container-fluid text-center">
@@ -34,16 +34,19 @@
     Our reward fund can be funded by anyone! Be the change you want to see in the world!
   </h5>
       <h1 class="mb-0">Welcome, sponsor!</h1>
-        <h2 class="text-uppercase text-center mb-0">Balance: <span id="balance"></span> ETH</h2>
+      <h2 class="mb-0">Fund Balance: <span id="balance"></span> ETH</h2>
+      <br/>
 
       <div>
-        <label for="name" class="col-lg-2 control-label">Sponsors Name:</label>
-        <input id="name" type="text">
+        <label for="name" class="col-lg-4 control-label">Sponsors Name:</label>
+        <input id="name" class="col-lg-3" type="text">
       </div>
+      <br/>
       <div>
-        <label for="name" class="col-lg-2 control-label">Donation (ETH):</label>
-        <input id="donation" type="text">
+        <label for="name" class="col-lg-4 control-label">Donation (ETH):</label>
+        <input id="donation" class="col-lg-3" type="text">
       </div>
+      <br/>
       <div>
         <button type="button" id="button" class="btn btn-primary btn-lg">Submit</button>
       </div>
