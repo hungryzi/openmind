@@ -1,0 +1,2120 @@
+data = [
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "war dort mit gps und eigene Bilder"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13646 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Adressen Altenau"
+			}
+		],
+		"_id": "58302584",
+		"_user": "gmbo",
+		"_uid": "577895",
+		"_created_at": "2018-04-22T05:22:15Z",
+		"_closed_at": "2018-04-22T05:22:18Z",
+		"_open": "false",
+		"_min_lat": "51.7990432",
+		"_min_lon": "10.4407349",
+		"_max_lat": "51.8010597",
+		"_max_lon": "10.4439826",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "review_requested",
+				"_v": "yes"
+			},
+			{
+				"_k": "changesets_count",
+				"_v": "1"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Vila Poroq Poroq Gili Air."
+			}
+		],
+		"_id": "58302583",
+		"_user": "Rizkydenys90",
+		"_uid": "8154155",
+		"_created_at": "2018-04-22T05:22:12Z",
+		"_open": "true",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "ideditor:walkthrough_started",
+				"_v": "yes"
+			},
+			{
+				"_k": "ideditor:walkthrough_progress",
+				"_v": "welcome;navigation;point;area;line;building;startEditing"
+			},
+			{
+				"_k": "ideditor:walkthrough_completed",
+				"_v": "yes"
+			},
+			{
+				"_k": "changesets_count",
+				"_v": "3"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Adding buildings"
+			}
+		],
+		"_id": "58302582",
+		"_user": "kioufe",
+		"_uid": "8152156",
+		"_created_at": "2018-04-22T05:21:58Z",
+		"_closed_at": "2018-04-22T05:22:05Z",
+		"_open": "false",
+		"_min_lat": "40.9806189",
+		"_min_lon": "22.8677658",
+		"_max_lat": "41.0031900",
+		"_max_lon": "22.8896928",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1309"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "DigitalGlobe Standard Imagery;Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Corrected alignments, added bike path"
+			}
+		],
+		"_id": "58302581",
+		"_user": "heyitsstevo",
+		"_uid": "1899168",
+		"_created_at": "2018-04-22T05:21:49Z",
+		"_closed_at": "2018-04-22T05:21:55Z",
+		"_open": "false",
+		"_min_lat": "-37.7131591",
+		"_min_lon": "144.7786220",
+		"_max_lat": "-37.6998473",
+		"_max_lon": "144.8038254",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Bing"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "refining crete"
+			}
+		],
+		"_id": "58302580",
+		"_user": "greecemapper",
+		"_uid": "23785",
+		"_created_at": "2018-04-22T05:21:47Z",
+		"_open": "true",
+		"_min_lat": "35.2853956",
+		"_min_lon": "25.4489504",
+		"_max_lat": "35.3086713",
+		"_max_lon": "25.5214937",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "build",
+				"_v": "2.5-21-gec1befed"
+			},
+			{
+				"_k": "created_by",
+				"_v": "Potlatch 2"
+			},
+			{
+				"_k": "version",
+				"_v": "2.5"
+			},
+			{
+				"_k": "comment",
+				"_v": "Tippfehler korrigiert"
+			}
+		],
+		"_id": "58302579",
+		"_user": "Hans Loderer",
+		"_uid": "48185",
+		"_created_at": "2018-04-22T05:21:40Z",
+		"_open": "true",
+		"_min_lat": "48.2680621",
+		"_min_lon": "11.3919007",
+		"_max_lat": "48.2680621",
+		"_max_lon": "11.3919007",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1461"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "LINZ NZ Topo50 Gridless Maps;OpenStreetMap GPS traces;Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-NZ"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Stewart Island Waterways etc"
+			}
+		],
+		"_id": "58302578",
+		"_user": "petenz",
+		"_uid": "38928",
+		"_created_at": "2018-04-22T05:21:39Z",
+		"_closed_at": "2018-04-22T05:21:41Z",
+		"_open": "false",
+		"_min_lat": "-46.9561818",
+		"_min_lon": "167.7510397",
+		"_max_lat": "-46.9382949",
+		"_max_lon": "167.7748622",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "OsmAnd+ 2.9.3"
+			},
+			{
+				"_k": "comment",
+				"_v": "Add Restaurant."
+			}
+		],
+		"_id": "58302577",
+		"_user": "phlustik",
+		"_uid": "842813",
+		"_created_at": "2018-04-22T05:21:31Z",
+		"_closed_at": "2018-04-22T05:21:31Z",
+		"_open": "false",
+		"_min_lat": "34.0543495",
+		"_min_lon": "-118.2632026",
+		"_max_lat": "34.0543495",
+		"_max_lon": "-118.2632026",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Ortofoto PCN 2012+WMS+GPS"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 it)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Marina di Modica"
+			}
+		],
+		"_id": "58302576",
+		"_user": "aldoct",
+		"_uid": "923271",
+		"_created_at": "2018-04-22T05:21:29Z",
+		"_closed_at": "2018-04-22T05:21:33Z",
+		"_open": "false",
+		"_min_lat": "36.7055870",
+		"_min_lon": "14.7496462",
+		"_max_lat": "36.7466282",
+		"_max_lon": "14.7924669",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "2666"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "pt-BR"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Estou adicionando o nome desta avenida."
+			}
+		],
+		"_id": "58302575",
+		"_user": "carlosassuncao92",
+		"_uid": "6251065",
+		"_created_at": "2018-04-22T05:21:20Z",
+		"_closed_at": "2018-04-22T05:21:21Z",
+		"_open": "false",
+		"_min_lat": "-23.6524677",
+		"_min_lon": "-46.6447789",
+		"_max_lat": "-23.6473323",
+		"_max_lon": "-46.6410323",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1277"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": "survey;aerial imagery"
+			},
+			{
+				"_k": "comment",
+				"_v": "Added Mindil Beach Market."
+			}
+		],
+		"_id": "58302574",
+		"_user": "explorewiki",
+		"_uid": "535086",
+		"_created_at": "2018-04-22T05:21:03Z",
+		"_closed_at": "2018-04-22T05:21:04Z",
+		"_open": "false",
+		"_min_lat": "-12.4445632",
+		"_min_lon": "130.8316881",
+		"_max_lat": "-12.4445632",
+		"_max_lon": "130.8316881",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "769"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-GB"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "aligning roads, buildings, walls and fences to to satellite imagery in area around Carntyne Station and Carntyne Industrial Estate"
+			}
+		],
+		"_id": "58302573",
+		"_user": "Ossian Lore",
+		"_uid": "3472118",
+		"_created_at": "2018-04-22T05:20:42Z",
+		"_closed_at": "2018-04-22T05:20:52Z",
+		"_open": "false",
+		"_min_lat": "55.8535560",
+		"_min_lon": "-4.2137748",
+		"_max_lat": "55.8592255",
+		"_max_lon": "-4.1587500",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "OsmAnd~ 2.9.3"
+			},
+			{
+				"_k": "comment",
+				"_v": "Add Camp site."
+			}
+		],
+		"_id": "58302572",
+		"_user": "ZeitlerM",
+		"_uid": "8007731",
+		"_created_at": "2018-04-22T05:20:42Z",
+		"_closed_at": "2018-04-22T05:20:42Z",
+		"_open": "false",
+		"_min_lat": "47.7114364",
+		"_min_lon": "9.1799140",
+		"_max_lat": "47.7114364",
+		"_max_lon": "9.1799140",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "BDOrtho IGN; Cadastre; Esri World Imagery (Clarity) Beta; OpenStreetMap (style français); survey"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 fr)"
+			},
+			{
+				"_k": "comment",
+				"_v": "plan d'eau et bois mouchamps"
+			}
+		],
+		"_id": "58302571",
+		"_user": "Régis Vrignaud",
+		"_uid": "7053591",
+		"_created_at": "2018-04-22T05:20:41Z",
+		"_closed_at": "2018-04-22T05:20:45Z",
+		"_open": "false",
+		"_min_lat": "46.7762216",
+		"_min_lon": "-1.0421670",
+		"_max_lat": "46.7865698",
+		"_max_lon": "-1.0159510",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Pomorskie Trasy Rowerowe - Dane oficjalne Urzędu Marszałkowskiego"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 pl)"
+			},
+			{
+				"_k": "comment",
+				"_v": "EV10 Korekty"
+			}
+		],
+		"_id": "58302570",
+		"_user": "wojtas82",
+		"_uid": "729745",
+		"_created_at": "2018-04-22T05:20:26Z",
+		"_closed_at": "2018-04-22T05:20:39Z",
+		"_open": "false",
+		"_min_lat": "54.0514955",
+		"_min_lon": "18.4533103",
+		"_max_lat": "54.6272950",
+		"_max_lon": "19.2361566",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1420"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Mapbox Satellite;Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "school grounds"
+			}
+		],
+		"_id": "58302569",
+		"_user": "Jaku103",
+		"_uid": "7184380",
+		"_created_at": "2018-04-22T05:20:24Z",
+		"_closed_at": "2018-04-22T05:20:31Z",
+		"_open": "false",
+		"_min_lat": "47.1835190",
+		"_min_lon": "-122.5281790",
+		"_max_lat": "47.1898030",
+		"_max_lon": "-122.5199600",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "OsmAnd+ 2.9.3"
+			},
+			{
+				"_k": "comment",
+				"_v": "Add "
+			}
+		],
+		"_id": "58302568",
+		"_user": "progserega",
+		"_uid": "127372",
+		"_created_at": "2018-04-22T05:20:22Z",
+		"_open": "true",
+		"_min_lat": "43.1567064",
+		"_min_lon": "131.9356664",
+		"_max_lat": "43.1567064",
+		"_max_lon": "131.9356664",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "5"
+			},
+			{
+				"_k": "hashtags",
+				"_v": "#hotosm-project-3825;#Sri;#Kandy;#State"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery;data file"
+			},
+			{
+				"_k": "locale",
+				"_v": "zh-CN"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "#hotosm-project-3825#Sri Lanka#Kandy#State of Sri Lankan Cities"
+			}
+		],
+		"_id": "58302567",
+		"_user": "不南飞的雁子",
+		"_uid": "8144672",
+		"_created_at": "2018-04-22T05:20:14Z",
+		"_closed_at": "2018-04-22T05:20:16Z",
+		"_open": "false",
+		"_min_lat": "7.2958417",
+		"_min_lon": "80.6247358",
+		"_max_lat": "7.2984586",
+		"_max_lon": "80.6291800",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "MAPS.ME android 8.1.3-Google"
+			},
+			{
+				"_k": "comment",
+				"_v": "Created an attraction"
+			},
+			{
+				"_k": "bundle_id",
+				"_v": "com.mapswithme.maps.pro"
+			}
+		],
+		"_id": "58302566",
+		"_user": "Colombo42",
+		"_uid": "8148350",
+		"_created_at": "2018-04-22T05:20:12Z",
+		"_closed_at": "2018-04-22T05:20:44Z",
+		"_open": "false",
+		"_min_lat": "27.6439788",
+		"_min_lon": "85.4843724",
+		"_max_lat": "27.6439788",
+		"_max_lon": "85.4843724",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "build",
+				"_v": "2.5-21-gec1befed"
+			},
+			{
+				"_k": "version",
+				"_v": "2.5"
+			},
+			{
+				"_k": "created_by",
+				"_v": "Potlatch 2"
+			},
+			{
+				"_k": "comment",
+				"_v": "quick fix"
+			}
+		],
+		"_id": "58302565",
+		"_user": "SimMoonXP",
+		"_uid": "3392",
+		"_created_at": "2018-04-22T05:20:08Z",
+		"_open": "true",
+		"_min_lat": "33.5510693",
+		"_min_lon": "-117.6020514",
+		"_max_lat": "33.5536879",
+		"_max_lon": "-117.5994864",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "2641"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "DigitalGlobe Standard Imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-GB"
+			},
+			{
+				"_k": "host",
+				"_v": "http://preview.ideditor.com/master/"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 90876f6"
+			},
+			{
+				"_k": "comment",
+				"_v": "Armchair mapping"
+			}
+		],
+		"_id": "58302564",
+		"_user": "AkuAnakTimur",
+		"_uid": "1407839",
+		"_created_at": "2018-04-22T05:20:06Z",
+		"_closed_at": "2018-04-22T05:20:08Z",
+		"_open": "false",
+		"_min_lat": "5.1139674",
+		"_min_lon": "101.7117896",
+		"_max_lat": "5.1142103",
+		"_max_lon": "101.7130110",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Bayern 80"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Überflüssiges Tagging entfernt"
+			}
+		],
+		"_id": "58302563",
+		"_user": "gerosm",
+		"_uid": "51230",
+		"_created_at": "2018-04-22T05:19:53Z",
+		"_open": "true",
+		"_min_lat": "50.1173276",
+		"_min_lon": "11.6291973",
+		"_max_lat": "50.1173276",
+		"_max_lon": "11.6291973",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "2665"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "pt-BR"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Esta rua é a única saída para quem sai da Avenida Francisco de Paula Quintanilha Ribeiro em direção ao Hospital Municipal Arthur Ribeiro de Saboya."
+			}
+		],
+		"_id": "58302562",
+		"_user": "carlosassuncao92",
+		"_uid": "6251065",
+		"_created_at": "2018-04-22T05:19:29Z",
+		"_closed_at": "2018-04-22T05:19:30Z",
+		"_open": "false",
+		"_min_lat": "-23.6530721",
+		"_min_lon": "-46.6478433",
+		"_max_lat": "-23.6517849",
+		"_max_lon": "-46.6448494",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "MAPS.ME android 8.1.3-Google"
+			},
+			{
+				"_k": "comment",
+				"_v": "Created a college"
+			},
+			{
+				"_k": "bundle_id",
+				"_v": "com.mapswithme.maps.pro"
+			}
+		],
+		"_id": "58302561",
+		"_user": "Aranius adrian",
+		"_uid": "7761787",
+		"_created_at": "2018-04-22T05:19:23Z",
+		"_closed_at": "2018-04-22T05:19:27Z",
+		"_open": "false",
+		"_min_lat": "-6.2219217",
+		"_min_lon": "35.8215900",
+		"_max_lat": "-6.2219217",
+		"_max_lon": "35.8215900",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "3567"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "ru"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "стройка завершена"
+			}
+		],
+		"_id": "58302560",
+		"_user": "Zavkil",
+		"_uid": "376484",
+		"_created_at": "2018-04-22T05:19:17Z",
+		"_closed_at": "2018-04-22T05:19:20Z",
+		"_open": "false",
+		"_min_lat": "42.9638878",
+		"_min_lon": "47.5003633",
+		"_max_lat": "42.9721892",
+		"_max_lon": "47.5168749",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Baudenkmäler im Landkreis LAU"
+			}
+		],
+		"_id": "58302559",
+		"_user": "osm_walker",
+		"_uid": "4360539",
+		"_created_at": "2018-04-22T05:19:16Z",
+		"_closed_at": "2018-04-22T05:19:17Z",
+		"_open": "false",
+		"_min_lat": "49.5539152",
+		"_min_lon": "11.2652882",
+		"_max_lat": "49.5539152",
+		"_max_lon": "11.2652882",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "war dort mit gps und eigene Bilder"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13646 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Adressen Altenau"
+			}
+		],
+		"_id": "58302558",
+		"_user": "gmbo",
+		"_uid": "577895",
+		"_created_at": "2018-04-22T05:19:10Z",
+		"_closed_at": "2018-04-22T05:19:17Z",
+		"_open": "false",
+		"_min_lat": "51.7990432",
+		"_min_lon": "10.4339515",
+		"_max_lat": "51.8023825",
+		"_max_lon": "10.4440941",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "22500"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Esri World Imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "tr"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "."
+			}
+		],
+		"_id": "58302557",
+		"_user": "penom",
+		"_uid": "436145",
+		"_created_at": "2018-04-22T05:19:07Z",
+		"_closed_at": "2018-04-22T05:19:07Z",
+		"_open": "false",
+		"_min_lat": "39.9480459",
+		"_min_lon": "32.7664346",
+		"_max_lat": "39.9486112",
+		"_max_lon": "32.7675935",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "167"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "es"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "proceso"
+			}
+		],
+		"_id": "58302556",
+		"_user": "Alvaro A Davila",
+		"_uid": "8003068",
+		"_created_at": "2018-04-22T05:18:58Z",
+		"_closed_at": "2018-04-22T05:19:07Z",
+		"_open": "false",
+		"_min_lat": "-17.4438956",
+		"_min_lon": "-66.1398487",
+		"_max_lat": "-17.4407562",
+		"_max_lon": "-66.1339158",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Esri World Imagery (Clarity) Beta; http://propertymap.sfplanning.org/?dept=planning"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 en)"
+			},
+			{
+				"_k": "comment",
+				"_v": "West of Twin Peaks, SF, CA: Addresses"
+			}
+		],
+		"_id": "58302555",
+		"_user": "AndrewSnow",
+		"_uid": "371121",
+		"_created_at": "2018-04-22T05:18:41Z",
+		"_closed_at": "2018-04-22T05:18:48Z",
+		"_open": "false",
+		"_min_lat": "37.7358433",
+		"_min_lon": "-122.4605875",
+		"_max_lat": "37.7402637",
+		"_max_lon": "-122.4538930",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Baudenkmäler im Landkreis LAU"
+			}
+		],
+		"_id": "58302554",
+		"_user": "osm_walker",
+		"_uid": "4360539",
+		"_created_at": "2018-04-22T05:18:25Z",
+		"_closed_at": "2018-04-22T05:18:26Z",
+		"_open": "false",
+		"_min_lat": "49.5539256",
+		"_min_lon": "11.2652524",
+		"_max_lat": "49.5539256",
+		"_max_lon": "11.2652524",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "bug fixing"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 en)"
+			},
+			{
+				"_k": "comment",
+				"_v": "OSM Inspector routing fixes"
+			}
+		],
+		"_id": "58302553",
+		"_user": "aighes",
+		"_uid": "110639",
+		"_created_at": "2018-04-22T05:18:23Z",
+		"_closed_at": "2018-04-22T05:18:27Z",
+		"_open": "false",
+		"_min_lat": "31.9630540",
+		"_min_lon": "118.6830507",
+		"_max_lat": "31.9862712",
+		"_max_lon": "118.7114010",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "391"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Mapbox Satellite"
+			},
+			{
+				"_k": "locale",
+				"_v": "zh-CN"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "杭州富阳2118"
+			}
+		],
+		"_id": "58302552",
+		"_user": "方恨少",
+		"_uid": "6161085",
+		"_created_at": "2018-04-22T05:18:06Z",
+		"_closed_at": "2018-04-22T05:18:14Z",
+		"_open": "false",
+		"_min_lat": "30.0576358",
+		"_min_lon": "119.8921568",
+		"_max_lat": "30.0976758",
+		"_max_lon": "119.9426040",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "ideditor:walkthrough_started",
+				"_v": "yes"
+			},
+			{
+				"_k": "ideditor:walkthrough_progress",
+				"_v": "welcome;navigation;point;area;line;building;startEditing"
+			},
+			{
+				"_k": "ideditor:walkthrough_completed",
+				"_v": "yes"
+			},
+			{
+				"_k": "changesets_count",
+				"_v": "9"
+			},
+			{
+				"_k": "hashtags",
+				"_v": "#hotosm-project-4396;#Sri;#Attidiya;#State"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery;data file"
+			},
+			{
+				"_k": "locale",
+				"_v": "nl"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "#hotosm-project-4396#Sri Lanka#Attidiya#State of Sri Lankan Cities"
+			}
+		],
+		"_id": "58302551",
+		"_user": "openqwik",
+		"_uid": "8149668",
+		"_created_at": "2018-04-22T05:18:04Z",
+		"_closed_at": "2018-04-22T05:18:04Z",
+		"_open": "false",
+		"_min_lat": "6.8302764",
+		"_min_lon": "79.8691916",
+		"_max_lat": "6.8369149",
+		"_max_lon": "79.8702235",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "61"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "es"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "fallado 4"
+			}
+		],
+		"_id": "58302550",
+		"_user": "josealbartorrez",
+		"_uid": "8023522",
+		"_created_at": "2018-04-22T05:17:49Z",
+		"_closed_at": "2018-04-22T05:18:21Z",
+		"_open": "false",
+		"_min_lat": "-17.4411051",
+		"_min_lon": "-66.1567642",
+		"_max_lat": "-17.4400881",
+		"_max_lon": "-66.1545623",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "2156"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "DigitalGlobe Standard Imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "es"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "CEU"
+			}
+		],
+		"_id": "58302549",
+		"_user": "avm",
+		"_uid": "99570",
+		"_created_at": "2018-04-22T05:17:45Z",
+		"_closed_at": "2018-04-22T05:17:49Z",
+		"_open": "false",
+		"_min_lat": "37.3642046",
+		"_min_lon": "-6.0912775",
+		"_max_lat": "37.3703537",
+		"_max_lon": "-6.0860030",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "comment",
+				"_v": "edited コンフェリア 秦"
+			},
+			{
+				"_k": "build",
+				"_v": "25"
+			},
+			{
+				"_k": "version",
+				"_v": "1.1"
+			},
+			{
+				"_k": "created_by",
+				"_v": "Pushpin iOS"
+			}
+		],
+		"_id": "58302548",
+		"_user": "topstone",
+		"_uid": "1696339",
+		"_created_at": "2018-04-22T05:17:36Z",
+		"_closed_at": "2018-04-22T05:17:38Z",
+		"_open": "false",
+		"_min_lat": "34.7624371",
+		"_min_lon": "135.6324414",
+		"_max_lat": "34.7626522",
+		"_max_lon": "135.6326911",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "23647"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "ja"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "道路修正　Bing"
+			}
+		],
+		"_id": "58302547",
+		"_user": "futurumspes",
+		"_uid": "651065",
+		"_created_at": "2018-04-22T05:17:30Z",
+		"_closed_at": "2018-04-22T05:17:39Z",
+		"_open": "false",
+		"_min_lat": "36.0272491",
+		"_min_lon": "140.1190753",
+		"_max_lat": "36.0830635",
+		"_max_lon": "140.1767432",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "ideditor:walkthrough_started",
+				"_v": "yes"
+			},
+			{
+				"_k": "ideditor:walkthrough_progress",
+				"_v": "welcome;navigation;point;line;building;startEditing"
+			},
+			{
+				"_k": "changesets_count",
+				"_v": "3"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "de"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Straßen verbunden, Parkplatz entfernt, Quartierplatz erfasst"
+			}
+		],
+		"_id": "58302546",
+		"_user": "TOTO-G",
+		"_uid": "8154102",
+		"_created_at": "2018-04-22T05:17:19Z",
+		"_closed_at": "2018-04-22T05:17:21Z",
+		"_open": "false",
+		"_min_lat": "48.4260648",
+		"_min_lon": "9.0607379",
+		"_max_lat": "48.4269946",
+		"_max_lon": "9.0627555",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "BDOrtho IGN; Cadastre; Esri World Imagery (Clarity) Beta; OpenStreetMap (style français); survey"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 fr)"
+			},
+			{
+				"_k": "comment",
+				"_v": "plan d'eau et bois mouchamps"
+			}
+		],
+		"_id": "58302545",
+		"_user": "Régis Vrignaud",
+		"_uid": "7053591",
+		"_created_at": "2018-04-22T05:17:10Z",
+		"_closed_at": "2018-04-22T05:17:14Z",
+		"_open": "false",
+		"_min_lat": "46.7803839",
+		"_min_lon": "-1.0421670",
+		"_max_lat": "46.7865698",
+		"_max_lon": "-1.0167557",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "review_requested",
+				"_v": "yes"
+			},
+			{
+				"_k": "changesets_count",
+				"_v": "25"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-GB"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "change of worship service type as generic to avoid indicating as catholic church"
+			}
+		],
+		"_id": "58302544",
+		"_user": "Leontala Indiotov",
+		"_uid": "5613868",
+		"_created_at": "2018-04-22T05:17:09Z",
+		"_closed_at": "2018-04-22T05:17:10Z",
+		"_open": "false",
+		"_min_lat": "14.6961151",
+		"_min_lon": "121.0792251",
+		"_max_lat": "14.6963830",
+		"_max_lon": "121.0796769",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "OsmAnd~ 2.9.3"
+			},
+			{
+				"_k": "comment",
+				"_v": "Edit Marketplace."
+			}
+		],
+		"_id": "58302543",
+		"_user": "explorewiki",
+		"_uid": "535086",
+		"_created_at": "2018-04-22T05:17:04Z",
+		"_closed_at": "2018-04-22T05:17:06Z",
+		"_open": "false",
+		"_min_lat": "-12.4313474",
+		"_min_lon": "130.8443800",
+		"_max_lat": "-12.4313474",
+		"_max_lon": "130.8443800",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1460"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "LINZ NZ Topo50 Gridless Maps;OpenStreetMap GPS traces"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-NZ"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Stewart Island Waterways etc"
+			}
+		],
+		"_id": "58302542",
+		"_user": "petenz",
+		"_uid": "38928",
+		"_created_at": "2018-04-22T05:17:03Z",
+		"_closed_at": "2018-04-22T05:17:04Z",
+		"_open": "false",
+		"_min_lat": "-46.9624884",
+		"_min_lon": "167.7448716",
+		"_max_lat": "-46.9502285",
+		"_max_lon": "167.7714987",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "comment",
+				"_v": "edited 田伐 モータープール"
+			},
+			{
+				"_k": "build",
+				"_v": "25"
+			},
+			{
+				"_k": "version",
+				"_v": "1.1"
+			},
+			{
+				"_k": "created_by",
+				"_v": "Pushpin iOS"
+			}
+		],
+		"_id": "58302541",
+		"_user": "topstone",
+		"_uid": "1696339",
+		"_created_at": "2018-04-22T05:16:58Z",
+		"_closed_at": "2018-04-22T05:17:00Z",
+		"_open": "false",
+		"_min_lat": "34.7620900",
+		"_min_lon": "135.6325527",
+		"_max_lat": "34.7623186",
+		"_max_lon": "135.6329041",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "772"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "The Qoşkar stream"
+			}
+		],
+		"_id": "58302540",
+		"_user": "Wolfdemar",
+		"_uid": "6998770",
+		"_created_at": "2018-04-22T05:16:50Z",
+		"_closed_at": "2018-04-22T05:16:51Z",
+		"_open": "false",
+		"_min_lat": "40.4124757",
+		"_min_lon": "45.8447981",
+		"_max_lat": "40.4325800",
+		"_max_lon": "45.9280271",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "Shizuoka ortho; survey"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 ja)"
+			},
+			{
+				"_k": "comment",
+				"_v": "150号バイパス中島高架橋の調査を反映"
+			}
+		],
+		"_id": "58302539",
+		"_user": "下り専門",
+		"_uid": "692002",
+		"_created_at": "2018-04-22T05:16:47Z",
+		"_closed_at": "2018-04-22T05:17:37Z",
+		"_open": "false",
+		"_min_lat": "34.9338966",
+		"_min_lon": "138.3797281",
+		"_max_lat": "34.9407327",
+		"_max_lon": "138.4052440",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "MAPS.ME android 8.1.3-Google"
+			},
+			{
+				"_k": "comment",
+				"_v": "Created 4 attractions and an artwork; Updated an artwork, an attraction, and 2 other objects"
+			},
+			{
+				"_k": "bundle_id",
+				"_v": "com.mapswithme.maps.pro"
+			}
+		],
+		"_id": "58302538",
+		"_user": "Qiti Lai",
+		"_uid": "5091230",
+		"_created_at": "2018-04-22T05:16:44Z",
+		"_closed_at": "2018-04-22T05:17:07Z",
+		"_open": "false",
+		"_min_lat": "35.3103942",
+		"_min_lon": "24.0166896",
+		"_max_lat": "36.4019740",
+		"_max_lon": "25.4747126",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "3"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "de"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Weg hinzugefügt"
+			}
+		],
+		"_id": "58302537",
+		"_user": "Marzl",
+		"_uid": "8149746",
+		"_created_at": "2018-04-22T05:16:35Z",
+		"_closed_at": "2018-04-22T05:16:36Z",
+		"_open": "false",
+		"_min_lat": "48.5079062",
+		"_min_lon": "8.3174219",
+		"_max_lat": "48.5126066",
+		"_max_lon": "8.3359709",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "MAPS.ME android 8.1.3-Google"
+			},
+			{
+				"_k": "comment",
+				"_v": "Created a place_of_worship"
+			},
+			{
+				"_k": "bundle_id",
+				"_v": "com.mapswithme.maps.pro"
+			}
+		],
+		"_id": "58302536",
+		"_user": "Ko_Kz",
+		"_uid": "8134772",
+		"_created_at": "2018-04-22T05:16:35Z",
+		"_closed_at": "2018-04-22T05:16:39Z",
+		"_open": "false",
+		"_min_lat": "17.1099882",
+		"_min_lon": "95.1885439",
+		"_max_lat": "17.1099882",
+		"_max_lon": "95.1885439",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "hashtags",
+				"_v": "#hotosm-project-3825;#Sri;#Kandy;#State"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery;data file"
+			},
+			{
+				"_k": "locale",
+				"_v": "zh-CN"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "#hotosm-project-3825#Sri Lanka#Kandy#State of Sri Lankan Cities"
+			}
+		],
+		"_id": "58302535",
+		"_user": "不南飞的雁子",
+		"_uid": "8144672",
+		"_created_at": "2018-04-22T05:16:34Z",
+		"_closed_at": "2018-04-22T05:16:36Z",
+		"_open": "false",
+		"_min_lat": "7.2927240",
+		"_min_lon": "80.6255304",
+		"_max_lat": "7.2939369",
+		"_max_lon": "80.6266604",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1433"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bavaria DOP 80cm"
+			},
+			{
+				"_k": "locale",
+				"_v": "de"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Rückstau des Wehrs"
+			}
+		],
+		"_id": "58302534",
+		"_user": "André Toelle",
+		"_uid": "3526729",
+		"_created_at": "2018-04-22T05:16:32Z",
+		"_closed_at": "2018-04-22T05:16:33Z",
+		"_open": "false",
+		"_min_lat": "47.8252652",
+		"_min_lon": "12.6482282",
+		"_max_lat": "47.8315347",
+		"_max_lon": "12.6569296",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "comment",
+				"_v": "added JA 専用 駐車場"
+			},
+			{
+				"_k": "build",
+				"_v": "25"
+			},
+			{
+				"_k": "version",
+				"_v": "1.1"
+			},
+			{
+				"_k": "created_by",
+				"_v": "Pushpin iOS"
+			}
+		],
+		"_id": "58302533",
+		"_user": "topstone",
+		"_uid": "1696339",
+		"_created_at": "2018-04-22T05:16:30Z",
+		"_closed_at": "2018-04-22T05:16:32Z",
+		"_open": "false",
+		"_min_lat": "34.7617920",
+		"_min_lon": "135.6326160",
+		"_max_lat": "34.7617920",
+		"_max_lon": "135.6326160",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "OsmAnd+ 2.9.3"
+			},
+			{
+				"_k": "comment",
+				"_v": "Add Restaurant."
+			}
+		],
+		"_id": "58302532",
+		"_user": "phlustik",
+		"_uid": "842813",
+		"_created_at": "2018-04-22T05:16:30Z",
+		"_closed_at": "2018-04-22T05:20:25Z",
+		"_open": "false",
+		"_min_lat": "34.0562928",
+		"_min_lon": "-118.2714707",
+		"_max_lat": "34.0573878",
+		"_max_lon": "-118.2678539",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1275"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": "survey;aerial imagery"
+			},
+			{
+				"_k": "comment",
+				"_v": "Updated road type."
+			}
+		],
+		"_id": "58302531",
+		"_user": "explorewiki",
+		"_uid": "535086",
+		"_created_at": "2018-04-22T05:16:24Z",
+		"_closed_at": "2018-04-22T05:16:25Z",
+		"_open": "false",
+		"_min_lat": "-12.3745427",
+		"_min_lon": "130.8538010",
+		"_max_lat": "-12.3743502",
+		"_max_lon": "130.8539306",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Baudenkmäler im Landkreis LAU"
+			}
+		],
+		"_id": "58302530",
+		"_user": "osm_walker",
+		"_uid": "4360539",
+		"_created_at": "2018-04-22T05:16:14Z",
+		"_closed_at": "2018-04-22T05:16:15Z",
+		"_open": "false",
+		"_min_lat": "49.5539256",
+		"_min_lon": "11.2652524",
+		"_max_lat": "49.5539256",
+		"_max_lon": "11.2652524",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "2640"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "DigitalGlobe Standard Imagery;OpenStreetMap GPS traces"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-GB"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Armchair mapping"
+			}
+		],
+		"_id": "58302529",
+		"_user": "AkuAnakTimur",
+		"_uid": "1407839",
+		"_created_at": "2018-04-22T05:16:12Z",
+		"_closed_at": "2018-04-22T05:16:15Z",
+		"_open": "false",
+		"_min_lat": "4.1855453",
+		"_min_lon": "102.0173863",
+		"_max_lat": "4.3253307",
+		"_max_lon": "102.1464345",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "1459"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "LINZ NZ Topo50 Gridless Maps;OpenStreetMap GPS traces"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-NZ"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "Stewart Island Waterways etc"
+			}
+		],
+		"_id": "58302528",
+		"_user": "petenz",
+		"_uid": "38928",
+		"_created_at": "2018-04-22T05:16:09Z",
+		"_closed_at": "2018-04-22T05:16:11Z",
+		"_open": "false",
+		"_min_lat": "-46.9587027",
+		"_min_lon": "167.7448716",
+		"_max_lat": "-46.9502285",
+		"_max_lon": "167.7567144",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "changesets_count",
+				"_v": "83"
+			},
+			{
+				"_k": "imagery_used",
+				"_v": "Bing aerial imagery"
+			},
+			{
+				"_k": "locale",
+				"_v": "en-US"
+			},
+			{
+				"_k": "host",
+				"_v": "https://www.openstreetmap.org/edit"
+			},
+			{
+				"_k": "created_by",
+				"_v": "iD 2.8.0"
+			},
+			{
+				"_k": "source",
+				"_v": ""
+			},
+			{
+				"_k": "comment",
+				"_v": "22.4.2018 Improvements"
+			}
+		],
+		"_id": "58302527",
+		"_user": "Site Administrator",
+		"_uid": "5300929",
+		"_created_at": "2018-04-22T05:15:56Z",
+		"_closed_at": "2018-04-22T05:16:04Z",
+		"_open": "false",
+		"_min_lat": "22.8715209",
+		"_min_lon": "88.4110518",
+		"_max_lat": "22.9004078",
+		"_max_lon": "88.4400446",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "OSM-Datenbestand"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 de)"
+			},
+			{
+				"_k": "comment",
+				"_v": "Wolegg, Alttanner Straße: guest_house überarbeitet"
+			}
+		],
+		"_id": "58302526",
+		"_user": "PT-53",
+		"_uid": "355065",
+		"_created_at": "2018-04-22T05:15:37Z",
+		"_closed_at": "2018-04-22T05:15:38Z",
+		"_open": "false",
+		"_min_lat": "47.8250112",
+		"_min_lon": "9.8061372",
+		"_max_lat": "47.8250112",
+		"_max_lon": "9.8061372",
+		"_comments_count": "0"
+	},
+	{
+		"tag": [
+			{
+				"_k": "source",
+				"_v": "survey"
+			},
+			{
+				"_k": "created_by",
+				"_v": "JOSM/1.5 (13576 nl)"
+			}
+		],
+		"_id": "58302525",
+		"_user": "vjyblauw",
+		"_uid": "2844254",
+		"_created_at": "2018-04-22T05:15:31Z",
+		"_closed_at": "2018-04-22T05:15:36Z",
+		"_open": "false",
+		"_min_lat": "50.7998851",
+		"_min_lon": "4.0191062",
+		"_max_lat": "50.7998851",
+		"_max_lon": "4.0191062",
+		"_comments_count": "0"
+	}
+];

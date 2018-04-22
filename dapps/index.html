@@ -10,11 +10,28 @@
     <script src="./scripts/index.js"></script>
   </head>
   <body>
-    <ul>
-      <li><a href="/donators.html">Contribute to the Reward Fund</a></li>
-      <li><a href="/contributors.html">Claim your Reward</a></li>
+    <a href="/">
+      <h1>OpenMind</h1>
+    </a>
+    <h5>
+      We reward OpenStreetMap contributors for their contributions during disaster relief effort.
+    </h5>
+    <h5>
+      Our reward fund can be funded by anyone! Be the change you want to see in the world!
+    </h5>
+    <ul class="nav justify-content-center" style="font-size: 20px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Contributions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/donators.html">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contributors.html">Claim Rewards</a>
+      </li>
     </ul>
-    <h3 class="text-center">List of OpenStreetMap contributions</h3>
+    <div class="container-fluid">
+    <h4 class="text-center">List of OpenStreetMap contributions</h4>
     <br/>
     <table class="table" id="contributorsTable">
       <thead>
@@ -25,6 +42,7 @@
       <tbody>
       </tbody>
     </table>
+  </div>
 
     <div>
       <button class = "btn btn-primary" id="updateContributionsButton">update contributions</button>
