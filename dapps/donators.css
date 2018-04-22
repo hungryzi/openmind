@@ -5,13 +5,13 @@ body {
 
 label {
     display:block;
-    margin-bottom:20px;
+    margin-bottom:15px;
     font-size: 25px;
 }
 input {
     padding: 10px;
     width: 50%;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 input {
     padding: 10px;
