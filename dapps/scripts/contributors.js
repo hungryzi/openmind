@@ -140,7 +140,7 @@ window.addEventListener("load", function() {
   window.getBalance = function() {
     contract.getBalance(function(error, result) {
       if (!error) {
-        $("#balance").text(JSON.stringify(result));
+        $("#balance").text(web3.fromWei(result, "ether"));
       } else {
         alert(error);
       }
@@ -163,6 +163,19 @@ window.addEventListener("load", function() {
     );
   };
 
+  var event = contract.NewPayment();
+  event.watch(function(error, result) {
+    if (!error) {
+      console.log("NewPayment", result);
+      var args = result.args;
+      if (args._contributor === web3.eth.defaultAccount) {
+        $("#balance").text(web3.fromWei(args._balance, "ether"));
+      }
+    } else {
+      alert(error);
+    }
+  });
+
   getBalance();
 
   $("#claimButton").on("click", function() {
@@ -171,14 +184,5 @@ window.addEventListener("load", function() {
 
   $("#reportContributionsButton").on("click", function() {
     reportContributions();
-  });
-
-  var event = contract.NewPayment();
-  event.watch(function(error, result) {
-    if (!error) {
-      console.log("NewPayment", result);
-    } else {
-      console.log("error NewPayment", error);
-    }
   });
 });
