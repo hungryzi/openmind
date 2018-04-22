@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="contributors.css">
 
-    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="../node_modules/web3/dist/web3.min.js"></script>
 
 </head>
 <body>
@@ -30,14 +30,25 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
     <script>
+
+
+
+    var contract;
+    function main() {
+      console.log('main!')
+
      if (typeof web3 !== 'undefined') {
-       web3 = new Web3(web3.currentProvider);
+       console.log("METAMASK!!!")
+        web3 = new Web3(web3.currentProvider);
      } else {
+       //console.log(web3);
        // set the provider you want from Web3.providers
-       web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+       //web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+       setTimeout(main, 1000);
+       return;
      }
 
-     web3.eth.defaultAccount = web3.eth.accounts[0];
+     //web3.eth.defaultAccount = web3.eth.accounts[0];
      var OpenStreetMapPayments = web3.eth.contract([
     {
         "constant": false,
@@ -77,12 +88,7 @@
     },
     {
         "constant": true,
-        "inputs": [
-            {
-                "name": "_contributor",
-                "type": "address"
-            }
-        ],
+        "inputs": [],
         "name": "getPayment",
         "outputs": [
             {
@@ -129,8 +135,19 @@
     }
 ]);
 
-var contract= OpenStreetMapPayments.at('0x6cfa090ffc6ebc0d7f6d744f991944fd344f8aed');
+contract= OpenStreetMapPayments.at('0x6cfa090ffc6ebc0d7f6d744f991944fd344f8aed');
         console.log(contract);
+        contract.getPayment(function(error, result){
+            if(!error)
+                {
+                    $("#balance").html(result[0]);
+                    console.log(result);
+                }
+            else
+                console.error(error);
+        });
+}
+window.addEventListener('load', main);
     </script>
 </body>
 </html>
