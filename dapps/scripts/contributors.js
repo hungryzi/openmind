@@ -133,7 +133,7 @@ window.addEventListener("load", function() {
       type: "event"
     }
   ];
-  var contractAddress = "0x682398Dc00DCB04CaB50D8C5562D86fDd01F74D2";
+  var contractAddress = "0x0B7A6B985AaC5aec45EcBBb19B458b287456244c";
   var OpenStreetMapPayments = web3.eth.contract(abi);
   var contract = OpenStreetMapPayments.at(contractAddress);
 

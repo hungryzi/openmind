@@ -135,7 +135,7 @@ window.addEventListener("load", function() {
     }
   ];
 
-  var contractAddress = "0x682398Dc00DCB04CaB50D8C5562D86fDd01F74D2";
+  var contractAddress = "0x0B7A6B985AaC5aec45EcBBb19B458b287456244c";
   web3.eth.defaultAccount = web3.eth.accounts[0];
 
   $("#button").click(function() {
