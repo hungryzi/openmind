@@ -21,7 +21,7 @@ h1 {
   padding-bottom: 20px;
 }
 h2 {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 h3 {
 padding-top: 15px;
@@ -36,4 +36,9 @@ div {
 
 #button {
   font-size: 25px; padding-left: 30px; padding-right: 30px;
+}
+
+#balance {
+  padding:0;
+  margin:0;
 }

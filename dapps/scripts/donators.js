@@ -138,6 +138,15 @@ window.addEventListener("load", function() {
   var contractAddress = "0x0B7A6B985AaC5aec45EcBBb19B458b287456244c";
   web3.eth.defaultAccount = web3.eth.accounts[0];
 
+  web3.eth.getBalance("0x0B7A6B985AaC5aec45EcBBb19B458b287456244c", function(error, result){
+    if (!error) {
+      $("#balance").text(web3.fromWei(result, "ether"));
+    } else {
+      alert(error);
+    }
+  });
+
+
   $("#button").click(function() {
     var OpenStreetMapPayments = web3.eth.contract(abi);
     var contract = OpenStreetMapPayments.at(contractAddress);
