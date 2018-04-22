@@ -166,7 +166,6 @@ window.addEventListener("load", function() {
   var event = contract.NewPayment();
   event.watch(function(error, result) {
     if (!error) {
-      console.log("NewPayment", result);
       var args = result.args;
       if (args._contributor === web3.eth.defaultAccount) {
         $("#balance").text(web3.fromWei(args._balance, "ether"));
