@@ -125,4 +125,8 @@ window.addEventListener("load", function() {
   $("#claimButton").on("click", function() {
     withdrawPayments();
   });
+
+  $("#reportContributionsButton").on("click", function() {
+    reportContributions();
+  });
 });
