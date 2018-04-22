@@ -112,12 +112,13 @@ window.addEventListener("load", function() {
   };
 
   window.reportContributions = function() {
-    contract.reportContributions(web3.eth.defaultAccount, 2000, function(
-      error,
-      result
-    ) {
-      console.log("done reportContributions", error, result);
-    });
+    contract.reportContributions(
+      web3.eth.defaultAccount,
+      web3.toWei(0.03, "ether"),
+      function(error, result) {
+        console.log("done reportContributions", error, result);
+      }
+    );
   };
 
   getBalance();
