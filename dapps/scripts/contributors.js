@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
   }
 
   web3.eth.defaultAccount = web3.eth.accounts[0];
-  var OpenStreetMapPayments = web3.eth.contract([
+  var abi = [
     {
       constant: false,
       inputs: [],
@@ -96,9 +96,9 @@ window.addEventListener("load", function() {
       stateMutability: "view",
       type: "function"
     }
-  ]);
-
+  ]
   var contractAddress = "0x247c313128543052215d2e06172A4A2ef83a07c8";
+  var OpenStreetMapPayments = web3.eth.contract(abi);
   var contract = OpenStreetMapPayments.at(contractAddress);
   var getData = contract.fund.getData();
   web3.eth.sendTransaction(
