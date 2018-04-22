@@ -8,12 +8,31 @@ window.addEventListener("load", function() {
   web3.eth.defaultAccount = web3.eth.accounts[0];
   var abi = [
     {
-      constant: false,
+      constant: true,
       inputs: [],
-      name: "fund",
-      outputs: [],
-      payable: true,
-      stateMutability: "payable",
+      name: "totalPayments",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: true,
+      inputs: [],
+      name: "getBalance",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
       type: "function"
     },
     {
@@ -29,7 +48,12 @@ window.addEventListener("load", function() {
         }
       ],
       name: "reportContributions",
-      outputs: [],
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
       payable: false,
       stateMutability: "nonpayable",
       type: "function"
@@ -37,7 +61,7 @@ window.addEventListener("load", function() {
     {
       constant: false,
       inputs: [],
-      name: "withdrawPayments",
+      name: "withdrawBalance",
       outputs: [],
       payable: false,
       stateMutability: "nonpayable",
@@ -46,15 +70,24 @@ window.addEventListener("load", function() {
     {
       constant: true,
       inputs: [],
-      name: "getPayment",
+      name: "owner",
       outputs: [
         {
           name: "",
-          type: "uint256"
+          type: "address"
         }
       ],
       payable: false,
       stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: false,
+      inputs: [],
+      name: "fund",
+      outputs: [],
+      payable: true,
+      stateMutability: "payable",
       type: "function"
     },
     {
@@ -77,26 +110,35 @@ window.addEventListener("load", function() {
       type: "function"
     },
     {
-      constant: true,
       inputs: [],
-      name: "totalPayments",
-      outputs: [
+      payable: false,
+      stateMutability: "nonpayable",
+      type: "constructor"
+    },
+    {
+      anonymous: false,
+      inputs: [
         {
-          name: "",
+          indexed: true,
+          name: "_contributor",
+          type: "address"
+        },
+        {
+          indexed: false,
+          name: "_balance",
           type: "uint256"
         }
       ],
-      payable: false,
-      stateMutability: "view",
-      type: "function"
+      name: "NewPayment",
+      type: "event"
     }
   ];
-  var contractAddress = "0x247c313128543052215d2e06172A4A2ef83a07c8";
+  var contractAddress = "0x682398Dc00DCB04CaB50D8C5562D86fDd01F74D2";
   var OpenStreetMapPayments = web3.eth.contract(abi);
   var contract = OpenStreetMapPayments.at(contractAddress);
 
   window.getBalance = function() {
-    contract.getPayment(function(error, result) {
+    contract.getBalance(function(error, result) {
       if (!error) {
         $("#balance").text(JSON.stringify(result));
       } else {
@@ -105,8 +147,8 @@ window.addEventListener("load", function() {
     });
   };
 
-  window.withdrawPayments = function() {
-    contract.withdrawPayments(function(error, result) {
+  window.withdrawBalance = function() {
+    contract.withdrawBalance(function(error, result) {
       console.log("done withdraw", error, result);
     });
   };
@@ -124,10 +166,19 @@ window.addEventListener("load", function() {
   getBalance();
 
   $("#claimButton").on("click", function() {
-    withdrawPayments();
+    withdrawBalance();
   });
 
   $("#reportContributionsButton").on("click", function() {
     reportContributions();
+  });
+
+  var event = contract.NewPayment();
+  event.watch(function(error, result) {
+    if (!error) {
+      console.log("NewPayment", result);
+    } else {
+      console.log("error NewPayment", error);
+    }
   });
 });

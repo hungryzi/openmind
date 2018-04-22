@@ -18,7 +18,7 @@ contract PullPayment {
   /**
   * @dev Withdraw accumulated balance, called by payee.
   */
-  function withdrawPayments() public {
+  function withdrawPayments() internal {
     address payee = msg.sender;
     uint256 payment = payments[payee];
 

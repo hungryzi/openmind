@@ -7,14 +7,33 @@ window.addEventListener("load", function() {
     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
   }
 
-  const abi = [
+  var abi = [
     {
-      constant: false,
+      constant: true,
       inputs: [],
-      name: "fund",
-      outputs: [],
-      payable: true,
-      stateMutability: "payable",
+      name: "totalPayments",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: true,
+      inputs: [],
+      name: "getBalance",
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
+      payable: false,
+      stateMutability: "view",
       type: "function"
     },
     {
@@ -30,7 +49,12 @@ window.addEventListener("load", function() {
         }
       ],
       name: "reportContributions",
-      outputs: [],
+      outputs: [
+        {
+          name: "",
+          type: "uint256"
+        }
+      ],
       payable: false,
       stateMutability: "nonpayable",
       type: "function"
@@ -38,7 +62,7 @@ window.addEventListener("load", function() {
     {
       constant: false,
       inputs: [],
-      name: "withdrawPayments",
+      name: "withdrawBalance",
       outputs: [],
       payable: false,
       stateMutability: "nonpayable",
@@ -47,15 +71,24 @@ window.addEventListener("load", function() {
     {
       constant: true,
       inputs: [],
-      name: "getPayment",
+      name: "owner",
       outputs: [
         {
           name: "",
-          type: "uint256"
+          type: "address"
         }
       ],
       payable: false,
       stateMutability: "view",
+      type: "function"
+    },
+    {
+      constant: false,
+      inputs: [],
+      name: "fund",
+      outputs: [],
+      payable: true,
+      stateMutability: "payable",
       type: "function"
     },
     {
@@ -78,18 +111,27 @@ window.addEventListener("load", function() {
       type: "function"
     },
     {
-      constant: true,
       inputs: [],
-      name: "totalPayments",
-      outputs: [
+      payable: false,
+      stateMutability: "nonpayable",
+      type: "constructor"
+    },
+    {
+      anonymous: false,
+      inputs: [
         {
-          name: "",
+          indexed: true,
+          name: "_contributor",
+          type: "address"
+        },
+        {
+          indexed: false,
+          name: "_balance",
           type: "uint256"
         }
       ],
-      payable: false,
-      stateMutability: "view",
-      type: "function"
+      name: "NewPayment",
+      type: "event"
     }
   ];
 
