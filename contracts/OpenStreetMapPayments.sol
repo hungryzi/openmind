@@ -14,8 +14,6 @@ contract OpenStreetMapPayments is PullPayment {
   using SafeMath for uint256;
 
   function fund() public payable {
-    require(msg.value > 0);
-    address(this).transfer(msg.value);
   }
 
   function getPayment() public view returns (uint256) {
