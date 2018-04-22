@@ -13,11 +13,24 @@ input {
     width: 50%;
     margin-bottom: 1em;
 }
+input {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 1em;
+}
 button {
     margin: 50 0;
     padding-top: 50px;
     display:block;
     font-size: 26px;
+}
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 div {
   padding-top: 30px;
@@ -27,5 +40,5 @@ div {
 }
 
 #button {
-  font-size: 22px; padding-left: 20px; padding-right: 20px;
+  font-size: 30px; padding-left: 30px; padding-right: 30px;
 }
