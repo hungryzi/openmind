@@ -1,153 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>OpenMind Contributor</title>
 
     <link rel="stylesheet" type="text/css" href="contributors.css">
 
-    <script src="../node_modules/web3/dist/web3.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./scripts/contributors.js"></script>
 
-</head>
-<body>
-    <div class="container text-center">
-
-        <h1>Openmind Contributor</h1>
-
-        <h2 for="balance" class="control-label">Balance</h2>
-
-
-            <h3 id="balance"></h3>
-            <button class = "btn btn-primary" id="button">Claim Balance</button>
-
-
-
+  </head>
+  <body>
+    <ul class="nav justify-content-center" id="menubar">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Contributions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/donators.html">Donate</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Claim Rewards</a>
+      </li>
+    </ul>
+    <div class="container-fluid text-center">
+    <a href="/">
+      <h1>OpenMind</h1>
+    </a>
+    <h5>
+      We reward OpenStreetMap contributors for their contributions during disaster relief effort.
+    </h5>
+    <h5>
+      Our reward fund can be funded by anyone! Be the change you want to see in the world!
+    </h5>
+    <div class="container-fluid text-center">
+        <h2 class="text-uppercase text-center mb-0">Welcome, contributor!</h2>
+        <h2 class="text-uppercase text-center mb-0">Balance: <span id="balance"></span> ETH</h2>
+      <div>  <button class = "btn btn-primary btn-lg" id="claimButton">Claim Balance</button> </div>
     </div>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
-    <script>
-
-
-
-    var contract;
-    function main() {
-      console.log('main!')
-
-     if (typeof web3 !== 'undefined') {
-       console.log("METAMASK!!!")
-        web3 = new Web3(web3.currentProvider);
-     } else {
-       //console.log(web3);
-       // set the provider you want from Web3.providers
-       //web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-       setTimeout(main, 1000);
-       return;
-     }
-
-     //web3.eth.defaultAccount = web3.eth.accounts[0];
-     var OpenStreetMapPayments = web3.eth.contract([
-    {
-        "constant": false,
-        "inputs": [],
-        "name": "fund",
-        "outputs": [],
-        "payable": true,
-        "stateMutability": "payable",
-        "type": "function"
-    },
-    {
-        "constant": false,
-        "inputs": [
-            {
-                "name": "_contributor",
-                "type": "address"
-            },
-            {
-                "name": "_wei",
-                "type": "uint256"
-            }
-        ],
-        "name": "reportContributions",
-        "outputs": [],
-        "payable": false,
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "constant": false,
-        "inputs": [],
-        "name": "withdrawPayments",
-        "outputs": [],
-        "payable": false,
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "constant": true,
-        "inputs": [],
-        "name": "getPayment",
-        "outputs": [
-            {
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "constant": true,
-        "inputs": [
-            {
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "name": "payments",
-        "outputs": [
-            {
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "constant": true,
-        "inputs": [],
-        "name": "totalPayments",
-        "outputs": [
-            {
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
-        "type": "function"
-    }
-]);
-
-contract= OpenStreetMapPayments.at('0x6cfa090ffc6ebc0d7f6d744f991944fd344f8aed');
-        console.log(contract);
-        contract.getPayment(function(error, result){
-            if(!error)
-                {
-                    $("#balance").html(result[0]);
-                    console.log(result);
-                }
-            else
-                console.error(error);
-        });
-}
-window.addEventListener('load', main);
-    </script>
-</body>
+  </body>
 </html>
