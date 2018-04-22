@@ -114,7 +114,7 @@ $("#button").click(function() {
         alert("Please donate pleaseee");
       }
       else {
-        alrt("Thank you for donation, " + nameOfDonator);
+        alert("Thank you for donation, " + nameOfDonator);
       }
     }
   );
