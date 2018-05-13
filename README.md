@@ -12,5 +12,7 @@ Install the dependencies:
 ```sh
 npm install
 npm install -g serve
+cd dapps
+serve
 ```
 
